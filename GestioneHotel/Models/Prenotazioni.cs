@@ -2,16 +2,16 @@
 {
     public class Prenotazioni
     {
-        public int ID { get; set; }
-        public DateTime DataPrenotazione { get; set; }
-        public int NumeroProgressivo { get; set; }
-        public int Anno { get; set; }
-        public DateTime PeriodoDal { get; set; }
-        public DateTime PeriodoAl { get; set; }
-        public decimal Caparra { get; set; }
-        public decimal Tariffa { get; set; }
-        public string TipoSoggiorno { get; set; }
+        public int Id { get; set; }
         public string CodiceFiscaleCliente { get; set; }
         public int NumeroCamera { get; set; }
+        public DateTime DataPrenotazione { get; set; }
+        public int NumeroProgressivoAnno { get; set; }
+        public int Anno { get; set; }
+        public DateTime Dal { get; set; }
+        public DateTime Al { get; set; }
+        public decimal CaparraConfirmatoria { get; set; }
+        public decimal TariffaApplicata { get; set; }
+        public string DettagliSoggiorno { get; set; }
     }
 }
