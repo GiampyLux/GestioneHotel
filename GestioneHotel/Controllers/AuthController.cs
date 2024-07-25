@@ -12,7 +12,7 @@ namespace GestioneHotel.Controllers
     [Route("api/[controller]")]
     public class AuthController : ControllerBase
     {
-        private readonly string _secretKey = "LaTuaChiaveSegretaPerJWT"; // Dovresti mettere una chiave segreta sicura qui
+        private readonly string _secretKey = "LaTuaChiaveSegretaPerJWTCheDeveEssereLungaAlmeno32Caratteri!"; // Dovresti mettere una chiave segreta sicura qui
 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLogin userLogin)
