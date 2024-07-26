@@ -17,7 +17,7 @@ namespace GestioneHotel.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLogin userLogin)
         {
-            // Qui dovresti aggiungere la logica di autenticazione (es. controllo username e password nel database)
+            
             if (userLogin.Username != "admin" || userLogin.Password != "password")
                 return Unauthorized();
 

@@ -19,7 +19,7 @@ namespace GestioneHotel
             builder.Services.AddControllersWithViews(); // Usa questa linea se hai sia API che viste
 
             // Configura l'autenticazione JWT
-            var key = Encoding.ASCII.GetBytes("LaTuaChiaveSegretaPerJWT"); // Sostituisci con una chiave segreta sicura
+            var key = Encoding.ASCII.GetBytes("LaTuaChiaveSegretaPerJWTCheDeveEssereLungaAlmeno32Caratteri!"); // Sostituisci con una chiave segreta sicura
 
             builder.Services.AddAuthentication(x =>
             {
